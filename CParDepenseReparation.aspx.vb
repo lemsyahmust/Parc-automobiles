@@ -46,7 +46,7 @@ Partial Public Class WebForm39
             con.Close()
 
         Catch ex As Exception
-            
+            con.Close()
 
         End Try
         con.Close()
