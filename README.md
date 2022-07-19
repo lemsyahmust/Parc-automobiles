@@ -10,4 +10,6 @@
 
     * Le premier volet permet la saisie une fois pour toute, des caractéristiques des véhicules (évitant ainsi les erreurs des saisies répétitives).
     * Le second volet se rapporte aux affectations à différentes siége et le suivi d’éventuelle mutation.
-    * 
+    * Le 3éme volet s’occupe de l’entretien et de la maintenance des véhicules : suivi des vidanges, changement des pneus et réparations.
+    * Le 4éme volet se charge des dépenses et des missions et déplacements assurées par chaque véhicule et des dotations de carburant.
+    * Le 5éme volet permet les consultations et les recherches par des critères, et l’édition des états de sortie.
