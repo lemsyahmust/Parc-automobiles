@@ -14,3 +14,6 @@
     * Le 4éme volet se charge des dépenses et des missions et déplacements assurées par chaque véhicule et des dotations de carburant.
     * Le 5éme volet permet les consultations et les recherches par des critères, et l’édition des états de sortie.
 <h3>II.	2.	Les règles de gestion de l’application</h3>
+* RG1 : un véhicule peut être affecté une seule fois.
+* RG2 : un bénéficiaire peut avoir l’affectation d’un ou plusieurs véhicules.
+
