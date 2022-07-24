@@ -28,4 +28,9 @@
 * RG-11: chaque véhicule peut être réparé chez un ou plusieurs garagistes.
 * RG-12: chaque garagiste peut réparer un ou plusieurs véhicules.
 * RG-13 : chaque véhicule peut effectuer une ou plusieurs missions.
+RG14 : à chaque mission on peut affecter un ou plusieurs véhicules.
+RG 15: chaque mission peut comporter une ou plusieurs personnes. 
+RG 16: chaque personne ne peut participer qu’à une seule mission.
+RG17 : chaque mission peut comporter une ou plusieurs destinations.
+
 
