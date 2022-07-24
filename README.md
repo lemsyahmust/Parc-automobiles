@@ -15,14 +15,13 @@
     * Le 5éme volet permet les consultations et les recherches par des critères, et l’édition des états de sortie.
 <h3>II.	2.	Les règles de gestion de l’application</h3>
 
-* RG1 : un véhicule peut être affecté une seule fois.
-* RG2 : un bénéficiaire peut avoir l’affectation d’un ou plusieurs véhicules.
-* RG3 : un véhicule peut être conduit par un ou plusieurs chauffeurs.
-* RG4 : chaque véhicule consomme un seul type de carburant.
-* RG5 : un véhicule peut avoir une ou plusieurs dépenses de carburant.
-* RG6 : chaque véhicule peut subir une ou plusieurs réparations par un ou plusieurs réparateurs.
-* RG7 : chaque réparation peut contenir une ou plusieurs pièces de rechange.
-* RG8 : chaque véhicule peut avoir une ou plusieurs vidanges par un ou plusieurs garagistes.
-
-
-
+* RG-1 : un véhicule peut être affecté une seule fois.
+* RG-2 : un bénéficiaire peut avoir l’affectation d’un ou plusieurs véhicules.
+* RG-3 : un véhicule peut être conduit par un ou plusieurs chauffeurs.
+* RG-4 : chaque véhicule consomme un seul type de carburant.
+* RG-5 : un véhicule peut avoir une ou plusieurs dépenses de carburant.
+* RG-6 : chaque véhicule peut subir une ou plusieurs réparations par un ou plusieurs réparateurs.
+* RG-7 : chaque réparation peut contenir une ou plusieurs pièces de rechange.
+* RG-8 : chaque véhicule peut avoir une ou plusieurs vidanges par un ou plusieurs garagistes.
+* RG-9 : chaque vidange ne peut concerner qu’un seul véhicule.
+* RG-10: chaque véhicule peut se faire changer un ou plusieurs pneus par un ou plusieurs garagistes.
