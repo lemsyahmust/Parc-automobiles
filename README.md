@@ -17,4 +17,7 @@
 
 * RG1 : un véhicule peut être affecté une seule fois.
 * RG2 : un bénéficiaire peut avoir l’affectation d’un ou plusieurs véhicules.
+* RG3 : un véhicule peut être conduit par un ou plusieurs chauffeurs.
+* RG4 : chaque véhicule consomme un seul type de carburant.
+
 
