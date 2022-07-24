@@ -13,7 +13,7 @@
     * Le 3éme volet s’occupe de l’entretien et de la maintenance des véhicules : suivi des vidanges, changement des pneus et réparations.
     * Le 4éme volet se charge des dépenses et des missions et déplacements assurées par chaque véhicule et des dotations de carburant.
     * Le 5éme volet permet les consultations et les recherches par des critères, et l’édition des états de sortie.
-<h3>II.	2.	Les règles de gestion de l’application</h3>
+<h3>II.	Les règles de gestion de l’application</h3>
 
 * RG-1  : un véhicule peut être affecté une seule fois.
 * RG-2  : un bénéficiaire peut avoir l’affectation d’un ou plusieurs véhicules.
@@ -32,5 +32,3 @@
 * RG-15 : chaque mission peut comporter une ou plusieurs personnes. 
 * RG-16 : chaque personne ne peut participer qu’à une seule mission.
 * RG-17 : chaque mission peut comporter une ou plusieurs destinations.
-
-
