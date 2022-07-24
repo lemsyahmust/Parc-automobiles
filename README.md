@@ -13,3 +13,4 @@
     * Le 3éme volet s’occupe de l’entretien et de la maintenance des véhicules : suivi des vidanges, changement des pneus et réparations.
     * Le 4éme volet se charge des dépenses et des missions et déplacements assurées par chaque véhicule et des dotations de carburant.
     * Le 5éme volet permet les consultations et les recherches par des critères, et l’édition des états de sortie.
+<h3>II.	2.	Les règles de gestion de l’application</h3>
