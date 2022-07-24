@@ -25,3 +25,7 @@
 * RG-8 : chaque véhicule peut avoir une ou plusieurs vidanges par un ou plusieurs garagistes.
 * RG-9 : chaque vidange ne peut concerner qu’un seul véhicule.
 * RG-10: chaque véhicule peut se faire changer un ou plusieurs pneus par un ou plusieurs garagistes.
+* RG-11: chaque véhicule peut être réparé chez un ou plusieurs garagistes.
+* RG-12: chaque garagiste peut réparer un ou plusieurs véhicules.
+* RG-13 : chaque véhicule peut effectuer une ou plusieurs missions.
+
