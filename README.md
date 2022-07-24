@@ -19,5 +19,8 @@
 * RG2 : un bénéficiaire peut avoir l’affectation d’un ou plusieurs véhicules.
 * RG3 : un véhicule peut être conduit par un ou plusieurs chauffeurs.
 * RG4 : chaque véhicule consomme un seul type de carburant.
+* RG5 : un véhicule peut avoir une ou plusieurs dépenses de carburant.
+* RG6 : chaque véhicule peut subir une ou plusieurs réparations par un ou plusieurs réparateurs.
+
 
 
