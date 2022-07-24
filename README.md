@@ -21,6 +21,8 @@
 * RG4 : chaque véhicule consomme un seul type de carburant.
 * RG5 : un véhicule peut avoir une ou plusieurs dépenses de carburant.
 * RG6 : chaque véhicule peut subir une ou plusieurs réparations par un ou plusieurs réparateurs.
+* RG7 : chaque réparation peut contenir une ou plusieurs pièces de rechange.
+* RG8 : chaque véhicule peut avoir une ou plusieurs vidanges par un ou plusieurs garagistes.
 
 
 
