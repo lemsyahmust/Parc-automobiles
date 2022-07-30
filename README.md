@@ -32,3 +32,6 @@
 * RG-15 : chaque mission peut comporter une ou plusieurs personnes. 
 * RG-16 : chaque personne ne peut participer qu’à une seule mission.
 * RG-17 : chaque mission peut comporter une ou plusieurs destinations.
+
+
+![mcd parc-auto](https://user-images.githubusercontent.com/83125801/181903942-0b0ba267-dd3d-40fa-982c-d85df97ce114.jpg)
