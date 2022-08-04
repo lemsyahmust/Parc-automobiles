@@ -31,4 +31,4 @@
 * RG-14 : à chaque mission on peut affecter un ou plusieurs véhicules.
 * RG-15 : chaque mission peut comporter une ou plusieurs personnes. 
 * RG-16 : chaque personne ne peut participer qu’à une seule mission.
-* RG-17 : chaque mission peut comporter une ou plusieurs destinations.
+
