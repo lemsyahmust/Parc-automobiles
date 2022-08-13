@@ -1,0 +1,177 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="Vehicule01.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+    <title>Gestion Du Parc Auto </title>
+       
+    <style type="text/css">
+        
+<!--
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(../images/img01.jpg) repeat-x;
+	font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+#header {
+	width: 760px;
+	height: 140px;
+	margin: 0 auto;
+	background: #FFFFFF url(../images/04.bmp);
+	 	 
+}
+#menu {
+	width: 760px;
+	height: 70px;
+	margin: 0 auto;
+}
+#content {
+	width: 1327px;
+	margin: 0 auto 20px auto;
+	padding: 20px;
+	background: #FFFFFF url(../images/img04.jpg) repeat-x left bottom;
+}
+
+#footer {
+	height: 10px;
+	padding: 20px;
+	background: #2D2D2D url(../images/img07.gif) repeat-x;
+}
+#footer p {
+	text-align: center;
+	color: #999999;
+}
+.Style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.Style2 {font-size: 16px}
+
+        .style1
+        {
+            width: 194px;
+            height: 598px;
+        }
+
+        .style2
+        {
+            height: 598px;
+        }
+
+-->
+
+</style>
+
+<body vlink="#000fff">
+    <form id="form1" runat="server">
+<div id="header">
+
+</div>
+
+
+<div class="Style1" id="menu">
+<br />
+<marquee  scrollAmount="3"><center> <asp:Label ID="Noor"  runat="server"  class="Style2" Text="Gestion  Du  Parc  Auto"></asp:Label></center></marquee>
+    </div>
+    
+    
+     <div > 
+         
+     <table style="width: 101%; height: 487px;">
+         <tr>
+               <td valign="top" class="style1" >
+               
+               <br /><br /><br /><br /><br /><br /><br />
+               
+               <asp:Panel ID="Panel1" runat="server" Width="92%" BorderColor="White" 
+                       BorderWidth="0px" Height="496px" style="margin-right: 0px">
+               <table style="width: 140px; height: 392px; border-collapse: collapse; margin-top: 0px;">
+                            <tr>
+                                <td>
+                                    <br />
+                                    <asp:TreeView ID="TreeView2" runat="server" Width="168px" 
+                                        Height="470px" BackColor="White" BorderColor="Black" BorderStyle="Dotted" 
+                                        ShowLines="True">
+                                        <Nodes>
+                                            <asp:TreeNode Text="Caractéristique Vehicule" Value="Vehicule" 
+                                                NavigateUrl="~/Vehicule.aspx">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/AffectationVehicule.aspx" 
+                                                Text="Affectation Vehicule" Value="Affectation Vehicule"></asp:TreeNode>
+                                            <asp:TreeNode SelectAction="None" Text="Affectation" Value="Affectation">
+                                                <asp:TreeNode NavigateUrl="~/Affectation.aspx" Text="Bénéficiaire" 
+                                                    Value="Affectation"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="~/ChauffVehi.aspx" Text="Chauffeur" 
+                                                    Value="Chauffeur"></asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Entretien/Maintenance" Value="Administrateur" 
+                                                Checked="True" SelectAction="None">
+                                                <asp:TreeNode NavigateUrl="~/Réparation.aspx" Text="Réparation" 
+                                                    Value="Réparation"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="~/PneusVehi.aspx" Text="Pneus" Value="Pneus">
+                                                </asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="~/Vidange.aspx" Text="Vidange" Value="Vidange">
+                                                </asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Dépense" 
+                                                Value="Dépense" SelectAction="None">
+                                                <asp:TreeNode NavigateUrl="~/SNTL.aspx" Text="Fonds" 
+                                                    Value="Fonds"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="~/Mission.aspx" Text="Mission" 
+                                                    Value="Mission"></asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="~/AdepenseV.aspx" Text="Dotation carburant" 
+                                                    Value="Dépense vehicule"></asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/Reforme.aspx" Text="Réforme du vehicule" 
+                                                Value="Réforme du vehicule"></asp:TreeNode>
+                                            <asp:TreeNode SelectAction="None" Text="Recherche" Value="Recherche">
+                                                <asp:TreeNode Text="Par Matricule Vehicule" 
+                                                    Value="Par Matricule Vehicule" NavigateUrl="~/CParMatricule.aspx">
+                                                </asp:TreeNode>
+                                                <asp:TreeNode NavigateUrl="~/CParBéné.aspx" Text="Par Affectation" 
+                                                    Value="Par Affectation"></asp:TreeNode>
+                                                <asp:TreeNode Text="Par Type Dépense" 
+                                                    Value="Par Type Dépense">
+                                                    <asp:TreeNode NavigateUrl="~/ImpDepenseVehicule.aspx" Text="Pneus &amp; Ch.Huile" 
+                                                        Value="Pneus &amp; Ch.Huile"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/CParDepenseReparation.aspx" Text="Réparation" 
+                                                        Value="Réparation"></asp:TreeNode>
+                                                    <asp:TreeNode NavigateUrl="~/ImpDepenseCarburant.aspx" Text="Carburant" 
+                                                        Value="Carburant"></asp:TreeNode>
+                                                </asp:TreeNode>
+                                            </asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/NewUser1.aspx" Text="Nouveau compte" 
+                                                Value="Ajouter nouveau compte"></asp:TreeNode>
+                                        </Nodes>
+                                    </asp:TreeView>
+                                </td>
+                            </tr>
+                            
+                        </table></asp:Panel>
+                     
+                     
+               </td>
+               
+               <td class="style2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+               </td>
+        </tr>
+     </table>
+     
+        
+</div>
+    
+<br /><br />
+<div id="footer">
+	<p id="legal">Copyright &copy; 2011>
+</div>
+</form>	
+</body>
+
+</html>
