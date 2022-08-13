@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A38DCBB-23B4-40A8-99CE-29A4F450629E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Vehicule01</RootNamespace>
+    <AssemblyName>Vehicule01</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Vehicule01.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Vehicule01.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\CrystalDecisions.Web\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\04.bmp" />
+    <Content Include="images\4.bmp" />
+    <Content Include="images\bg_gradient.gif" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\error.gif" />
+    <Content Include="images\img01.jpg" />
+    <Content Include="images\img02.bmp" />
+    <Content Include="images\img04.jpg" />
+    <Content Include="images\img07.gif" />
+    <Content Include="images\ok.gif" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrysAffectation.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysAffectation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysAutre_Frais.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysAutre_Frais.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysBéné.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysBéné.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysBénéficiaire.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysBénéficiaire.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysCarnetVign.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysCarnetVign.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysChauffeurV.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysChauffeurV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysDepense.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysDepense.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysDepenseReparation.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysDepenseReparation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysDepenseVehi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysDepenseVehi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysHuile.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysHuile.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysMarqPneus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysMarqPneus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysMarqVehi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysMarqVehi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysMatricule.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysMatricule.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysMission.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysMission.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysNewAffectation2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysNewAffectation2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysParRepa.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysParRepa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysPers.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysPers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysPneus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysPneus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysReparateur.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysReparateur.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysReparation.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysReparation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysSNTL1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysSNTL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysTypeRepTion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysTypeRepTion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysVehi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysVehi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysVidange.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysVidange.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrysVignetteAssurance.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrysVignetteAssurance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImpAffectation.aspx.designer.vb">
+      <DependentUpon>ImpAffectation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpAffectation.aspx.vb">
+      <DependentUpon>ImpAffectation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpAutreF.aspx.designer.vb">
+      <DependentUpon>ImpAutreF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpAutreF.aspx.vb">
+      <DependentUpon>ImpAutreF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpBéné.aspx.designer.vb">
+      <DependentUpon>ImpBéné.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpBéné.aspx.vb">
+      <DependentUpon>ImpBéné.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpBénéficiaire.aspx.designer.vb">
+      <DependentUpon>ImpBénéficiaire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpBénéficiaire.aspx.vb">
+      <DependentUpon>ImpBénéficiaire.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpCarnetVign.aspx.designer.vb">
+      <DependentUpon>ImpCarnetVign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpCarnetVign.aspx.vb">
+      <DependentUpon>ImpCarnetVign.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpChauffeurV.aspx.designer.vb">
+      <DependentUpon>ImpChauffeurV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpChauffeurV.aspx.vb">
+      <DependentUpon>ImpChauffeurV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpCrysMatricule.aspx.designer.vb">
+      <DependentUpon>ImpCrysMatricule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpCrysMatricule.aspx.vb">
+      <DependentUpon>ImpCrysMatricule.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpDepenseReparation.aspx.designer.vb">
+      <DependentUpon>ImpDepenseReparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpDepenseReparation.aspx.vb">
+      <DependentUpon>ImpDepenseReparation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpDepenseV.aspx.designer.vb">
+      <DependentUpon>ImpDepenseV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpDepenseV.aspx.vb">
+      <DependentUpon>ImpDepenseV.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpHuile.aspx.designer.vb">
+      <DependentUpon>ImpHuile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpHuile.aspx.vb">
+      <DependentUpon>ImpHuile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpMarqPneus.aspx.designer.vb">
+      <DependentUpon>ImpMarqPneus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpMarqPneus.aspx.vb">
+      <DependentUpon>ImpMarqPneus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpMarqVehi.aspx.designer.vb">
+      <DependentUpon>ImpMarqVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpMarqVehi.aspx.vb">
+      <DependentUpon>ImpMarqVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpMission.aspx.designer.vb">
+      <DependentUpon>ImpMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpMission.aspx.vb">
+      <DependentUpon>ImpMission.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpPers.aspx.designer.vb">
+      <DependentUpon>ImpPers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpPers.aspx.vb">
+      <DependentUpon>ImpPers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpPneus.aspx.designer.vb">
+      <DependentUpon>ImpPneus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpPneus.aspx.vb">
+      <DependentUpon>ImpPneus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpReparateur.aspx.designer.vb">
+      <DependentUpon>ImpReparateur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpReparateur.aspx.vb">
+      <DependentUpon>ImpReparateur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpReparation.aspx.designer.vb">
+      <DependentUpon>ImpReparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpReparation.aspx.vb">
+      <DependentUpon>ImpReparation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpSNTL.aspx.designer.vb">
+      <DependentUpon>ImpSNTL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpSNTL.aspx.vb">
+      <DependentUpon>ImpSNTL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpTypeRepTion.aspx.designer.vb">
+      <DependentUpon>ImpTypeRepTion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpTypeRepTion.aspx.vb">
+      <DependentUpon>ImpTypeRepTion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpVehi.aspx.designer.vb">
+      <DependentUpon>ImpVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpVehi.aspx.vb">
+      <DependentUpon>ImpVehi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpVidange.aspx.designer.vb">
+      <DependentUpon>ImpVidange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpVidange.aspx.vb">
+      <DependentUpon>ImpVidange.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpVignetteAssurance.aspx.designer.vb">
+      <DependentUpon>ImpVignetteAssurance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpVignetteAssurance.aspx.vb">
+      <DependentUpon>ImpVignetteAssurance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login1.aspx.designer.vb">
+      <DependentUpon>Login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.aspx.vb">
+      <DependentUpon>Login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ModifMarqueVehi.aspx.designer.vb">
+      <DependentUpon>ModifMarqueVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifMarqueVehi.aspx.vb">
+      <DependentUpon>ModifMarqueVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarqueVehi.aspx.designer.vb">
+      <DependentUpon>MarqueVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarqueVehi.aspx.vb">
+      <DependentUpon>MarqueVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChauffVehi.aspx.designer.vb">
+      <DependentUpon>ChauffVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChauffVehi.aspx.vb">
+      <DependentUpon>ChauffVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifChaufVehi.aspx.designer.vb">
+      <DependentUpon>ModifChaufVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifChaufVehi.aspx.vb">
+      <DependentUpon>ModifChaufVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewUser1.aspx.designer.vb">
+      <DependentUpon>NewUser1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewUser1.aspx.vb">
+      <DependentUpon>NewUser1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pneus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pneus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reparateur.aspx.designer.vb">
+      <DependentUpon>Reparateur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reparateur.aspx.vb">
+      <DependentUpon>Reparateur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifRepaVehi.aspx.designer.vb">
+      <DependentUpon>ModifRepaVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifRepaVehi.aspx.vb">
+      <DependentUpon>ModifRepaVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PneusVehi.aspx.designer.vb">
+      <DependentUpon>PneusVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PneusVehi.aspx.vb">
+      <DependentUpon>PneusVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Affectation.aspx.designer.vb">
+      <DependentUpon>Affectation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Affectation.aspx.vb">
+      <DependentUpon>Affectation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifAffect.aspx.designer.vb">
+      <DependentUpon>ModifAffect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifAffect.aspx.vb">
+      <DependentUpon>ModifAffect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carburant.aspx.designer.vb">
+      <DependentUpon>Carburant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carburant.aspx.vb">
+      <DependentUpon>Carburant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Image.aspx.designer.vb">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Image.aspx.vb">
+      <DependentUpon>Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vehicule.aspx.designer.vb">
+      <DependentUpon>Vehicule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicule.aspx.vb">
+      <DependentUpon>Vehicule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupprimerVehi.aspx.designer.vb">
+      <DependentUpon>SupprimerVehi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupprimerVehi.aspx.vb">
+      <DependentUpon>SupprimerVehi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SupprimerPneus.aspx.designer.vb">
+      <DependentUpon>SupprimerPneus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SupprimerPneus.aspx.vb">
+      <DependentUpon>SupprimerPneus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarquePneus.aspx.designer.vb">
+      <DependentUpon>MarquePneus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarquePneus.aspx.vb">
+      <DependentUpon>MarquePneus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifMarqPneus.aspx.designer.vb">
+      <DependentUpon>ModifMarqPneus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifMarqPneus.aspx.vb">
+      <DependentUpon>ModifMarqPneus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifPneus.aspx.designer.vb">
+      <DependentUpon>ModifPneus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifPneus.aspx.vb">
+      <DependentUpon>ModifPneus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TypeReparation.aspx.designer.vb">
+      <DependentUpon>TypeReparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TypeReparation.aspx.vb">
+      <DependentUpon>TypeReparation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModifTypeRepTion.aspx.designer.vb">
+      <DependentUpon>ModifTypeRepTion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModifTypeRepTion.aspx.vb">
+      <DependentUpon>ModifTypeRepTion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Huile.aspx.designer.vb">
+      <DependentUpon>Huile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Huile.aspx.vb">
+      <DependentUpon>Huile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vidange.aspx.designer.vb">
+      <DependentUpon>Vidange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vidange.aspx.vb">
+      <DependentUpon>Vidange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Supprimervidange.aspx.designer.vb">
+      <DependentUpon>Supprimervidange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Supprimervidange.aspx.vb">
+      <DependentUpon>Supprimervidange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarnetVignette.aspx.designer.vb">
+      <DependentUpon>CarnetVignette.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarnetVignette.aspx.vb">
+      <DependentUpon>CarnetVignette.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Réparation.aspx.designer.vb">
+      <DependentUpon>Réparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Réparation.aspx.vb">
+      <DependentUpon>Réparation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdepenseV.aspx.designer.vb">
+      <DependentUpon>AdepenseV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdepenseV.aspx.vb">
+      <DependentUpon>AdepenseV.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Mission.aspx.designer.vb">
+      <DependentUpon>Mission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mission.aspx.vb">
+      <DependentUpon>Mission.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Personnel.aspx.designer.vb">
+      <DependentUpon>Personnel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personnel.aspx.vb">
+      <DependentUpon>Personnel.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MisePerso.aspx.designer.vb">
+      <DependentUpon>MisePerso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MisePerso.aspx.vb">
+      <DependentUpon>MisePerso.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Autre_Frais.aspx.designer.vb">
+      <DependentUpon>Autre_Frais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Autre_Frais.aspx.vb">
+      <DependentUpon>Autre_Frais.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SNTL.aspx.designer.vb">
+      <DependentUpon>SNTL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SNTL.aspx.vb">
+      <DependentUpon>SNTL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VignetteAssurance.aspx.designer.vb">
+      <DependentUpon>VignetteAssurance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VignetteAssurance.aspx.vb">
+      <DependentUpon>VignetteAssurance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CParMatricule.aspx.designer.vb">
+      <DependentUpon>CParMatricule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CParMatricule.aspx.vb">
+      <DependentUpon>CParMatricule.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CPMarque.aspx.designer.vb">
+      <DependentUpon>CPMarque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CPMarque.aspx.vb">
+      <DependentUpon>CPMarque.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CParBéné.aspx.designer.vb">
+      <DependentUpon>CParBéné.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CParBéné.aspx.vb">
+      <DependentUpon>CParBéné.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpRepa.aspx.designer.vb">
+      <DependentUpon>ImpRepa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpRepa.aspx.vb">
+      <DependentUpon>ImpRepa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpDepenseVehicule.aspx.designer.vb">
+      <DependentUpon>ImpDepenseVehicule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpDepenseVehicule.aspx.vb">
+      <DependentUpon>ImpDepenseVehicule.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AffectationVehicule.aspx.designer.vb">
+      <DependentUpon>AffectationVehicule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AffectationVehicule.aspx.vb">
+      <DependentUpon>AffectationVehicule.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CParDepenseReparation.aspx.designer.vb">
+      <DependentUpon>CParDepenseReparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CParDepenseReparation.aspx.vb">
+      <DependentUpon>CParDepenseReparation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SuppMission.aspx.designer.vb">
+      <DependentUpon>SuppMission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SuppMission.aspx.vb">
+      <DependentUpon>SuppMission.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ImpDepenseCarburant.aspx.designer.vb">
+      <DependentUpon>ImpDepenseCarburant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImpDepenseCarburant.aspx.vb">
+      <DependentUpon>ImpDepenseCarburant.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reforme.aspx.designer.vb">
+      <DependentUpon>Reforme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reforme.aspx.vb">
+      <DependentUpon>Reforme.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm43.aspx.designer.vb">
+      <DependentUpon>WebForm43.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm43.aspx.vb">
+      <DependentUpon>WebForm43.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrysAffectation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysAffectation.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysAutre_Frais.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysAutre_Frais.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysBéné.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysBéné.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysBénéficiaire.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysBénéficiaire.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysCarnetVign.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysCarnetVign.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysChauffeurV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysChauffeurV.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysDepense.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysDepense.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysDepenseReparation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysDepenseReparation.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysDepenseVehi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysDepenseVehi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysHuile.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysHuile.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysMarqPneus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysMarqPneus.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysMarqVehi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysMarqVehi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysMatricule.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysMatricule.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysMission.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysMission.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysNewAffectation2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysNewAffectation2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysParRepa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysParRepa.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysPers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysPers.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysPneus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysPneus.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysReparateur.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysReparateur.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysReparation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysReparation.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysSNTL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysSNTL1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysTypeRepTion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysTypeRepTion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysVehi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysVehi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysVidange.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysVidange.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrysVignetteAssurance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrysVignetteAssurance.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pneus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Pneus.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Thumbs.db" />
+    <Content Include="images\1020.jpg" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\imprimante-icone-6110-96.png" />
+    <Content Include="images\imprimante-icone-copie.jpg" />
+    <Content Include="images\maryam15.jpg" />
+    <Content Include="images\Mecanicien.gif" />
+    <Content Include="images\modifier.jpg" />
+    <Content Include="images\modifier2.jpg" />
+    <Content Include="images\nouveau.jpg" />
+    <Content Include="images\nouveau2.jpg" />
+    <Content Include="images\Ouverture-du-service-de-reparation-des-consoles-de-Jeux.gif" />
+    <Content Include="images\pneus.jpg" />
+    <Content Include="images\supprimer.jpg" />
+    <Content Include="images\supprimer2.jpg" />
+    <Content Include="images\z.swf" />
+    <Content Include="ImpAffectation.aspx" />
+    <Content Include="ImpAutreF.aspx" />
+    <Content Include="ImpBéné.aspx" />
+    <Content Include="ImpBénéficiaire.aspx" />
+    <Content Include="ImpCarnetVign.aspx" />
+    <Content Include="ImpChauffeurV.aspx" />
+    <Content Include="ImpCrysMatricule.aspx" />
+    <Content Include="ImpDepenseReparation.aspx" />
+    <Content Include="ImpDepenseV.aspx" />
+    <Content Include="ImpHuile.aspx" />
+    <Content Include="ImpMarqPneus.aspx" />
+    <Content Include="ImpMarqVehi.aspx" />
+    <Content Include="ImpMission.aspx" />
+    <Content Include="ImpPers.aspx" />
+    <Content Include="ImpPneus.aspx" />
+    <Content Include="ImpReparateur.aspx" />
+    <Content Include="ImpReparation.aspx" />
+    <Content Include="ImpSNTL.aspx" />
+    <Content Include="ImpTypeRepTion.aspx" />
+    <Content Include="ImpVehi.aspx" />
+    <Content Include="ImpVidange.aspx" />
+    <Content Include="ImpVignetteAssurance.aspx" />
+    <Content Include="Login1.aspx" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="ModifMarqueVehi.aspx" />
+    <Content Include="MarqueVehi.aspx" />
+    <Content Include="ChauffVehi.aspx" />
+    <Content Include="ModifChaufVehi.aspx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="NewUser1.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
+    <Content Include="Web.sitemap" />
+    <Content Include="Reparateur.aspx" />
+    <Content Include="ModifRepaVehi.aspx" />
+    <Content Include="PneusVehi.aspx" />
+    <Content Include="Affectation.aspx" />
+    <Content Include="ModifAffect.aspx" />
+    <Content Include="Carburant.aspx" />
+    <Content Include="Image.aspx" />
+    <Content Include="Vehicule.aspx" />
+    <Content Include="SupprimerVehi.aspx" />
+    <Content Include="SupprimerPneus.aspx" />
+    <Content Include="MarquePneus.aspx" />
+    <Content Include="ModifMarqPneus.aspx" />
+    <Content Include="ModifPneus.aspx" />
+    <Content Include="TypeReparation.aspx" />
+    <Content Include="ModifTypeRepTion.aspx" />
+    <Content Include="Huile.aspx" />
+    <Content Include="Vidange.aspx" />
+    <Content Include="Supprimervidange.aspx" />
+    <Content Include="CarnetVignette.aspx" />
+    <Content Include="Réparation.aspx" />
+    <Content Include="AdepenseV.aspx" />
+    <Content Include="Mission.aspx" />
+    <Content Include="Personnel.aspx" />
+    <Content Include="MisePerso.aspx" />
+    <Content Include="Autre_Frais.aspx" />
+    <Content Include="SNTL.aspx" />
+    <Content Include="VignetteAssurance.aspx" />
+    <Content Include="CParMatricule.aspx" />
+    <Content Include="CPMarque.aspx" />
+    <Content Include="CParBéné.aspx" />
+    <Content Include="ImpRepa.aspx" />
+    <Content Include="ImpDepenseVehicule.aspx" />
+    <Content Include="AffectationVehicule.aspx" />
+    <Content Include="CParDepenseReparation.aspx" />
+    <Content Include="SuppMission.aspx" />
+    <Content Include="ImpDepenseCarburant.aspx" />
+    <Content Include="Reforme.aspx" />
+    <Content Include="WebForm43.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51294</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

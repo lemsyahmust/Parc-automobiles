@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+  <siteMapNode title="Paramétrage">
+        
+      <siteMapNode url="MarqueVehi.aspx" title="Marque Véhicule" />
+      <siteMapNode url="ChauffVehi.aspx" title="Chauffeur" />
+      <siteMapNode url="Reparateur.aspx" title="Réparateur" />
+      <siteMapNode url="Affectation.aspx" title="Affectation" />
+      <siteMapNode url="PneusVehi.aspx" title="Pneus" />
+      <siteMapNode url="Carburant.aspx" title="Carburant" />
+      <siteMapNode url="Vehicule.aspx" title="Vehicule" />
+      <siteMapNode url="MarquePneus.aspx" title="Marque Pneus" /> 
+  </siteMapNode>
+  
+ </siteMap>
+
